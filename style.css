@@ -1,0 +1,318 @@
+/* GLOBAL STYLE */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 26px;
+}
+
+h2{
+    font-size: 48px;
+    font-family: Lobster;
+}
+
+h3{
+    font-size: 30px;
+}
+h4,h5{
+    font-size: 28px;
+}
+li, button, label, input, p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(35, 36, 109);
+}
+
+button{
+    padding: 20px 60px;
+    background: rgb(35,36,109);
+    border: none;
+    color: white;
+}
+/* NAVBAR */
+
+.main-head{
+    background-color: white;
+    color: rgb(35, 36, 109);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex:1 1 500px;
+    justify-content: space-around;
+}
+
+#logo{
+    color: #6e59b4;
+    flex:2 1 500px;
+    font-family: Lobster;
+}
+
+#logo span{
+    color: rgb(35,36,109);
+    font-size: 25px;
+}
+
+.hero{
+    background: linear-gradient( rgba(19, 27, 75, 0.2), rgba(238, 197, 213, 0.2)) ,url(./image/hero.jpg);
+    min-height: 90vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(139, 118, 146, 0.815)
+
+}
+
+.hero h2{
+    font-size: 80px;
+}
+
+.hero h3{
+    padding: 30px;
+}
+
+.hero button{
+    background: rgba(1, 21, 53, 0.3);
+    border-radius: 20px;
+}
+
+.hero button:hover{
+    background-color: rgba(35, 36, 109, 0.247);
+    transition: 2s;
+}
+
+@media screen and (max-width:1112px){
+    nav{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    #logo{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .hero h2{
+        font-size: 50px;
+        padding: 0 10px;
+    }
+    .hero h3{
+        font-size: 20px;
+    }
+    .hero button{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:530px){
+    nav li{
+        font-size: 16px;
+    }
+    .hero h2{
+        font-size: 35px;
+    }
+}
+
+
+  /* PHOTOS */
+
+/* PHOTOS */
+#photo {
+	max-width: 100%;
+	margin: auto;
+	padding: 2rem 0;
+}
+
+#galerie {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#galerie img {
+	flex: 1 1 auto;
+	width: auto;
+	height: auto;
+	max-width: 300px;
+	max-height: 130px;
+	margin: 0.5rem;
+	object-fit: cover;
+	border: 1px solid #28323B;
+	border-radius: 5px;
+	box-shadow: 8px 8px 8px #28323B;
+	transform: scale(1);
+	transition: transform 1s;
+}
+
+#galerie img:hover {
+	transform-origin: 50% 50%;
+	transform: scale(2);
+	z-index: 1;
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+/* FIN PHOTOS */
+
+/* DESCRIPTION */
+
+.container {
+    display: flex;
+    margin: 40px 200px;
+}
+
+.descriptions {
+    display: flex;
+    padding-bottom: 120px;
+    border-bottom: 3px solid rgb(224, 95, 36);
+    
+}
+.description {
+    flex: 1 1 auto;
+    margin: 40px 40px;
+}
+
+.description h1{
+    text-align: center;
+}
+
+.description p{
+    text-align: center;
+    margin-top: 15px;
+    border: 10px;
+}
+
+.description i{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* LOGOS */
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    margin: 40px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.logo img{
+    width: 250px;
+    border-radius: 20px;
+}
+
+
+/* INFORMATION */
+
+.informations{
+    display: flex;
+}
+
+.information{
+    display: flex;
+    padding-top: 60px;
+    border-top: 3px solid rgb(224, 95, 36);
+    justify-content: space-around;
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 50%;
+}
+
+.information button{
+    background-color: rgb(224, 95, 36);
+    text-align: center;
+    font-size: 12px;
+    width: 30%;
+}
+
+/* IMAGES */
+
+.images{
+    display: flex;
+}
+
+.image{
+    display: flex;
+    border-top: 3px solid rgb(224, 95, 36);
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.image img{
+    width: 400px;
+    height: 200px;
+    border-bottom: 3px solid orange;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    background-position: cover;
+    background-color: rgba(196, 185, 185, 0.514);
+    color: black;
+    height: 150px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.copyright{
+    text-align: left;
+    flex: 1 1 auto;
+    width: 50%;
+    margin: 20px 200px 0 200px;
+}
+
+
+
+.reseau{
+    display: flex;
+    flex: 1 1 auto;
+    width: 50%;
+    margin: 20px 200px 0 200px;
+    flex-direction: row;
+    
+    
+}
+    
+
+.reseau i{
+    margin-bottom: 10px;
+    
+}
+
